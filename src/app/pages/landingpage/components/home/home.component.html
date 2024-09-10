@@ -1,0 +1,17 @@
+<div class="home-container">
+  <div class="bg-container">
+    <div class="bg-overlay"></div>
+  </div>
+
+  <h1 class="home-text">
+    Lorem Ipsum es simplemente el texto de relleno de las imprentas
+  </h1>
+
+  <button class="home-button">CONOCENOS</button>
+
+  <div class="home-cards-container">
+    @for (card of homeCardList; track card.id) {
+    <app-home-card [card]="card" />
+    }
+  </div>
+</div>
