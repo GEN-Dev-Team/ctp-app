@@ -1,48 +1,50 @@
 .header {
+  display: flex;
   width: 1440px;
   height: 84px;
-  margin-inline: auto;
-  display: flex;
+  padding: 4px 112px;
   align-items: center;
+  gap: 282px;
+
+  margin-inline: auto;
   background-color: #F5F7FA;
   position: relative;
 }
 
 .logo-container {
-  display: flex;
-  align-items: center;
-}
-
-.logo {
   height: 76px;
   width: 102px;
-  margin-left: 112px;
+  flex-shrink: 0;
 }
 
 .nav-menu {
-  margin-left:282px ;
   display: flex;
   align-items: center;
-  margin-right  : 112px;
 }
 
 .nav-menu ul {
   list-style: none;
   display: flex;
+  align-items: center;
+  gap:80px;
   margin: 0;
   padding: 0;
 }
 
 .nav-menu li {
-  margin: 0 35px;
+  margin: 0 0px;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
 }
 
 .nav-menu a {
   color: #000000;
   text-decoration: none;
-  font-size: 16px;
-  font-weight: 400;
   position: relative;
+
 }
 
 .nav-menu a:hover {
@@ -51,8 +53,13 @@
 
 .language-switcher {
   display: flex;
-  gap: 10px;
-  margin-left: 38px;
+  gap: 15px;
+  margin-left: 80px;
+  font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px;
 }
 
 .lang-link {
