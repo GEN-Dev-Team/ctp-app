@@ -1,0 +1,104 @@
+.map-container {
+  .map-content {
+    background: var(--gray-2);
+  }
+
+  .title {
+    margin-block: 94px 87px;
+    text-align: center;
+    color: var(--Gris, #78787d);
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.99px;
+  }
+
+  .map-details {
+    width: 1440px;
+    margin-inline: auto;
+    padding: 19px 112px 30px 144px;
+    height: 580px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    position: relative;
+
+    .map-first-col {
+      position: relative;
+      padding-top: 114px;
+
+      .map-description {
+        width: 605px;
+        height: 261px;
+        padding: 26px 51px 27px 59px;
+        border-radius: 21px;
+        background: var(--Blanco, #fff);
+        box-shadow: 0px 5px 19.4px 0px rgba(167, 169, 214, 0.97);
+        position: relative;
+
+        .map-title {
+          margin: 0;
+        }
+
+        .map-text {
+          text-align: justify;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 150%; /* 30px */
+          letter-spacing: -0.38px;
+        }
+
+        .map-description-icon {
+          position: absolute;
+          left: 0;
+          top: 12%;
+        }
+      }
+
+      .map-nosotros {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap: 22px;
+        font-size: 18px;
+        font-weight: 600;
+
+        div {
+          width: 37px;
+          height: 37px;
+          background: var(--orange-1);
+        }
+      }
+    }
+
+    .map-media {
+      position: relative;
+
+      .map-location-icon {
+        position: absolute;
+        right: 50%;
+        top: 50%;
+      }
+    }
+
+    .map-guide {
+      position: absolute;
+      right: 0;
+      top: 5%;
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 34px;
+
+      p {
+        width: 152px;
+        margin: 0;
+        font-size: 10px;
+        font-weight: 300;
+      }
+    }
+  }
+}

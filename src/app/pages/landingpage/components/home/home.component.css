@@ -1,16 +1,16 @@
 .home-container {
-  height: 677px;
+  height: 965px;
   padding: 95px 64px 70px;
   position: relative;
 
   .bg-container {
     width: 100%;
-    height: 461px;
+    height: 789px;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
-    background-image: url("/assets/images/bg-img.png");
+    background-image: url("/assets/images/bg-img.webp");
     background-size: cover;
 
     .bg-overlay {
@@ -22,29 +22,44 @@
 
   .home-text {
     width: 797px;
-    margin: 0 0 60px 0;
     color: #fff;
-    font-size: 50px;
+    font-size: 60px;
     font-style: normal;
     font-weight: 700;
-    line-height: 150%; /* 75px */
-    letter-spacing: -1.1px;
+    line-height: 150%;
+    letter-spacing: -1.32px;
   }
 
   .home-button {
-    width: 240px;
-    height: 66px;
-    border-radius: 6px;
+    width: 161px;
+    height: 56px;
+    border-radius: 4px;
+    background: var(--orange-1);
     border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
   }
 
   .home-cards-container {
+    width: 1184px;
+    height: 146px;
+    padding: 13px 117px 14px 92px;
+    border-radius: 10px;
+    background: var(--gray-2);
+    box-shadow: 0px 11px 20px 0px rgba(23, 23, 23, 0.21);
     display: flex;
     flex-flow: row nowrap;
-    gap: 125px;
+    justify-content: space-between;
     position: absolute;
     transform: translateX(-50%);
     left: 50%;
     bottom: 10%;
+
+    .card-separator {
+      width: 1px;
+      height: 119px;
+      background: #b4b4bd;
+    }
   }
 }

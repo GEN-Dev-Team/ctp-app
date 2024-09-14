@@ -1,0 +1,47 @@
+.service-item-container {
+  width: 269px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+
+  .service-icon {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 37px;
+    position: relative;
+
+    .service-number-container {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: white;
+      position: absolute;
+      left: -10%;
+      display: flex;
+      align-items: center;
+
+      .service-number {
+        display: flex;
+        width: 43.592px;
+        height: 43.592px;
+        border-radius: 50%;
+        background: var(--orange-1);
+        color: white;
+        font-size: 28px;
+        justify-content: center;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .service-title {
+    display: flex;
+    justify-self: start;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,11 @@
+.contact-container {
+  padding: 97px 46px 141px 81px;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 90px;
+
+  a {
+    color: black;
+    font-weight: 700;
+  }
+}

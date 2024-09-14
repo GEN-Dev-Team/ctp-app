@@ -7,11 +7,12 @@
     Lorem Ipsum es simplemente el texto de relleno de las imprentas
   </h1>
 
-  <button class="home-button">CONOCENOS</button>
+  <button class="home-button">Conócenos</button>
 
   <div class="home-cards-container">
     @for (card of homeCardList; track card.id) {
     <app-home-card [card]="card" />
+    <div class="card-separator" [hidden]="card.id == 3"></div>
     }
   </div>
 </div>

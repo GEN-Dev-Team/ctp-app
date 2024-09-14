@@ -1,0 +1,25 @@
+.services-container {
+  .services-title {
+    text-align: center;
+    margin: 0 0 103px;
+    color: var(--Gris, #78787d);
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.99px;
+  }
+
+  .service-content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+    .service-separator {
+      margin-top: 96px;
+      width: 92.633px;
+      height: 3px;
+      background: #d78129;
+    }
+  }
+}

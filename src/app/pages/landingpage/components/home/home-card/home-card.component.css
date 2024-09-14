@@ -1,16 +1,18 @@
 .card-container {
-  width: 230px;
-  height: 190px;
-  background: #e6e6e6;
-  border-radius: 6px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
 
   span {
+    color: var(--orange-1);
+    font-size: 60px;
+    font-weight: 700;
   }
 
   p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
   }
 }

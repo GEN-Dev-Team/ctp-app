@@ -1,1 +1,10 @@
-<p>services works!</p>
+<div class="services-container">
+  <h2 class="services-title">Servicios</h2>
+
+  <div class="service-content">
+    @for (service of serviceList; track service.id) {
+    <app-service-item [service]="service" />
+    <div class="service-separator" [hidden]="service.id == 4"></div>
+    }
+  </div>
+</div>
