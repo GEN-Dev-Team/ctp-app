@@ -12,3 +12,7 @@
   --gray-1: #78787d;
   --gray-2: #f5f7fa;
 }
+
+body {
+  margin: 0;
+}

@@ -1,0 +1,47 @@
+.contact-form-container {
+  width: 674px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 15px;
+  font-size: 20px;
+
+  .form-control {
+    label {
+      color: #08224b;
+      font-weight: 300;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      height: 52px;
+      padding-inline-start: 10px;
+      margin-top: 11px;
+      border-radius: 5px;
+      border: 2px solid var(--orange-1);
+      font-size: 20px;
+      font-weight: 300;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    textarea {
+      min-height: 86px;
+      max-height: 200px;
+      resize: vertical;
+    }
+  }
+
+  .form-button {
+    height: 52px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--orange-1);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 20px;
+  }
+}

@@ -7,10 +7,15 @@
         <div class="map-description">
           <h2 class="map-title">LA PAZ - BOLIVIA</h2>
           <p class="map-text">
-            Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-            archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar
-            de las industrias desde el año texto de relleno estándar de las
-            industrias desde el año relleno estándar.
+            @if (isPoint1Selected) { Punto 1 seleccionado Lorem Ipsum es
+            simplemente el texto de relleno de las imprentas y archivos de
+            texto. Lorem Ipsum ha sido el texto de relleno estándar de las
+            industrias desde el año texto de relleno estándar de las industrias
+            desde el año relleno estándar. } @else { Punto 2 seleccionado Lorem
+            Ipsum es simplemente el texto de relleno de las imprentas y archivos
+            de texto. Lorem Ipsum ha sido el texto de relleno estándar de las
+            industrias desde el año texto de relleno estándar de las industrias
+            desde el año relleno estándar. }
           </p>
 
           <app-caret-right-icon class="map-description-icon" />
@@ -25,7 +30,29 @@
       <div class="map-media">
         <img class="map-img" src="assets/images/map-img.svg" alt="" />
 
-        <app-location-icon class="map-location-icon" />
+        <div class="selection-point point-1">
+          <div
+            (click)="selectPoint1()"
+            class="point"
+            [hidden]="isPoint1Selected"
+          ></div>
+          <app-location-icon
+            class="map-location-icon"
+            [hidden]="!isPoint1Selected"
+          />
+        </div>
+
+        <div class="selection-point point-2">
+          <div
+            (click)="selectPoint2()"
+            class="point"
+            [hidden]="isPoint2Selected"
+          ></div>
+          <app-location-icon
+            class="map-location-icon"
+            [hidden]="!isPoint2Selected"
+          />
+        </div>
       </div>
       <div class="map-guide">
         <p>Selecciona los puntos naranjas en el mapa para conocer más</p>
