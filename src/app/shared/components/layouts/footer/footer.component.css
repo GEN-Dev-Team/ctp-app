@@ -1,16 +1,17 @@
 /* estilo del footer principal */
 .footer {
+  background-color: #000;
+}
+
+.footer-container {
+  display: flex;
+  gap: 125px;
   width: 1440px;
   height: 328px;
   padding: 64px 165px;
   margin-inline: auto;
   background-color: #000;
   color: #fff;
-}
-
-.footer-container {
-  display: flex;
-  gap: 125px;
 
 }
 
@@ -28,7 +29,11 @@
   width: 102px;
   height: 76px
 }
-
+.footer-logo .derechos{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 .footer-logo p {
   margin: 0;
   font-size: 14px;
@@ -38,7 +43,7 @@
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 16px;
 }
 .social-icons svg {
   width: 32px;
@@ -51,7 +56,7 @@
   color: #fff;
 }
 
-/* secciones del footer  */
+/* footer-section  */
 .principal-footer-section {
   width: 635px;
   height: 168px;
@@ -59,15 +64,23 @@
   align-items: flex-start;
   gap: 30px;
 }
-.footer-section {
-  flex: 1 1 200px;
-  min-width: 150px;
+.footer-section:nth-child(1) {
+  width: 160px;
+  height: 168px;
 }
-
+.footer-section:nth-child(2) {
+  width: 160px;
+  height: 168px;
+}
+.footer-section:nth-child(3)
+{
+  width: 255px;
+  height: 92px;
+}
 .footer-section h3 {
   font-size: 16px;
-  margin-bottom: 15px;
-  text-transform: uppercase;
+  margin-bottom: 24px;
+  margin-top: 0s;
 }
 
 .footer-section ul {
@@ -77,7 +90,7 @@
 }
 
 .footer-section li {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .footer-section a {
@@ -92,44 +105,58 @@
 }
 
 /* formulario de ssuscripción */
+
 .subscribe-form {
+  width: 255px;
+  height: 40px;
   display: flex;
   align-items: center;
   gap: 10px;
   margin-top: 10px;
+  position: relative;
+
 }
 
 .subscribe-form input {
+  width: 255px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2); /* Fondo gris transparente */
+  color: #FFF;
+  padding: 0 15px; /*para el texto  */
   border: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  background-color: transparent;
-  padding: 5px 10px;
-  color: #fff;
-  flex: 1;
-  outline: none;
-  transition: border-color 0.3s;
 }
 
+
 .subscribe-form input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--Text-Gray-300, #D9DBE1);
+  /* Body/Regular/Body 3 */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
 }
 
 .subscribe-form input:focus {
+  outline: none;
   border-bottom: 1px solid #ff7f00;
 }
-
-.subscribe-form button {
+.subscribe-form button{
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  background: transparent;
   border: none;
-  background-color: #ff7f00;
-  color: #fff;
-  padding: 8px 12px;
-  border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.subscribe-form button:hover {
-  background-color: #e66c00;
+.subscribe-form button svg{
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
 }
 
 /* responsive */
