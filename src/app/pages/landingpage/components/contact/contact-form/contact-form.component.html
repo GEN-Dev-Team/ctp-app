@@ -1,16 +1,26 @@
-<div class="contact-form-container">
+<form
+  action="https://api.web3forms.com/submit"
+  class="contact-form-container"
+  method="post"
+>
+  <input
+    type="hidden"
+    name="access_key"
+    value="65668c9e-db66-49bd-9988-b335dc7d7085"
+  />
+
   <div class="form-control">
     <label for="fullname">Nombres y Apellidos:</label>
-    <input type="text" id="fullname" />
+    <input type="text" id="fullname" name="fullname" required />
   </div>
   <div class="form-control">
     <label for="email">Email:</label>
-    <input type="text" id="email" />
+    <input type="text" id="email" name="email" required />
   </div>
   <div class="form-control">
     <label for="mensaje">Mensaje:</label>
-    <textarea id="mensaje"></textarea>
+    <textarea id="mensaje" name="message" required></textarea>
   </div>
 
-  <button>Enviar</button>
-</div>
+  <button type="submit" class="form-button">Enviar</button>
+</form>

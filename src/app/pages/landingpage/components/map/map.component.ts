@@ -14,4 +14,17 @@ import { CaretRightIconComponent } from './icons/caret-right-icon/caret-right-ic
   templateUrl: './map.component.html',
   styleUrl: './map.component.css',
 })
-export class MapComponent {}
+export class MapComponent {
+  isPoint1Selected = true;
+  isPoint2Selected = false;
+
+  selectPoint1() {
+    this.isPoint1Selected = true;
+    this.isPoint2Selected = false;
+  }
+
+  selectPoint2() {
+    this.isPoint1Selected = false;
+    this.isPoint2Selected = true;
+  }
+}

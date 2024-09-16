@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { HomeCardComponent } from './home-card/home-card.component';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HomeCardComponent],
+  imports: [HomeCardComponent, RouterLink, RouterOutlet],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })

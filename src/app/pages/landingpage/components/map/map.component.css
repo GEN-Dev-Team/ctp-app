@@ -78,10 +78,35 @@
     .map-media {
       position: relative;
 
-      .map-location-icon {
+      .selection-point {
         position: absolute;
-        right: 50%;
-        top: 50%;
+        width: 20px;
+        height: 20px;
+
+        .point {
+          cursor: pointer;
+          width: 20px;
+          height: 20px;
+          background: black;
+          border-radius: 50%;
+        }
+
+        .map-location-icon {
+          position: absolute;
+          top: -50px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+
+      .point-1 {
+        top: 40%;
+        left: 12%;
+      }
+
+      .point-2 {
+        top: 55%;
+        right: 30%;
       }
     }
 

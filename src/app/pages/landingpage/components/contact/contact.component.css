@@ -4,6 +4,37 @@
   flex-flow: row nowrap;
   gap: 90px;
 
+  .contact-description {
+    margin-top: 70px;
+
+    .contact-title {
+      margin: 0;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 150%;
+      letter-spacing: -0.66px;
+    }
+
+    .contact-text {
+      margin-top: 10px;
+      text-align: justify;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: -0.456px;
+    }
+
+    .contact-details {
+      margin-top: 100px;
+      color: #08224b;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0.1px;
+    }
+  }
+
   a {
     color: black;
     font-weight: 700;
