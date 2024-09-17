@@ -1,6 +1,5 @@
-.container{
-  background-color: #F5F7FA;
-
+.container {
+  background-color: #f5f7fa;
 }
 .header {
   display: flex;
@@ -10,7 +9,7 @@
   align-items: center;
   justify-content: space-between;
   margin-inline: auto;
-  background-color: #F5F7FA;
+  background-color: #f5f7fa;
   position: relative;
 }
 
@@ -18,15 +17,13 @@
   height: 76px;
   width: 102px;
   flex-shrink: 0;
-  .logo{
+  .logo {
     height: 76px;
     width: 102px;
   }
 }
 
-
 .nav-menu {
-
   display: flex;
   align-items: center;
 }
@@ -35,12 +32,12 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap:80px;
+  gap: 80px;
   margin: 0;
   padding: 0;
 }
 
-.nav-menu li a{
+.nav-menu li a {
   color: #000000;
 
   margin: 0 0px;
@@ -48,13 +45,11 @@
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
-
 }
 
 .nav-menu a {
   text-decoration: none;
   position: relative;
-
 }
 
 .nav-menu a:hover {
@@ -66,10 +61,10 @@
   gap: 15px;
   margin-left: 80px;
   font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 24px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
 }
 
 .lang-link {
@@ -77,6 +72,7 @@ line-height: 24px;
   color: #333;
   font-weight: bold;
   transition: color 0.3s;
+  cursor: pointer;
 }
 
 .lang-link.active {
@@ -88,7 +84,7 @@ line-height: 24px;
 }
 
 .nav-menu li a::after {
-  content: '';
+  content: "";
   display: block;
   margin: auto;
   height: 2px;
@@ -119,7 +115,7 @@ line-height: 24px;
 
 .menu-toggle .hamburger::before,
 .menu-toggle .hamburger::after {
-  content: '';
+  content: "";
   width: 25px;
   height: 3px;
   background-color: #000000;
@@ -144,7 +140,7 @@ line-height: 24px;
     top: 100%;
     left: 0;
     right: 0;
-    background-color: #F5F7FA;
+    background-color: #f5f7fa;
     flex-direction: column;
     text-align: center;
     transition: max-height 0.3s ease-in-out;

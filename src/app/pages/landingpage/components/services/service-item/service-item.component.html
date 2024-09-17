@@ -1,5 +1,10 @@
 <div class="service-item-container">
   <div class="service-icon">
+    <div class="service-icon-container">
+      @switch (service.id) { @case (1) {<app-multidis-icon />} @case (2)
+      {<app-gestion-icon />} @case (3) {<app-capacitacion-icon />} @case (4)
+      {<app-software-icon />} }
+    </div>
     <img class="service-img" src="assets/images/service-img.webp" alt="" />
     <div class="service-number-container">
       <span class="service-number">{{ service.id }}</span>

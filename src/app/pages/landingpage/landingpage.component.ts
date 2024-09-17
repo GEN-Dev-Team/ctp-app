@@ -5,6 +5,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ClientsAlliesComponent } from './components/clients-allies/clients-allies.component';
 import { MapComponent } from './components/map/map.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { WsspIconComponent } from './components/home/icons/wssp-icon/wssp-icon.component';
 
 @Component({
   selector: 'app-landingpage',
@@ -16,6 +17,7 @@ import { ContactComponent } from './components/contact/contact.component';
     ClientsAlliesComponent,
     MapComponent,
     ContactComponent,
+    WsspIconComponent,
   ],
   templateUrl: './landingpage.component.html',
   styleUrl: './landingpage.component.css',

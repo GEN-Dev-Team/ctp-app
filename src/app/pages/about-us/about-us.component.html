@@ -1,1 +1,74 @@
-<p>about-us works!</p>
+<div class="au-container">
+  <div class="au-content">
+    <h1 class="au-title">¿Quienes somos?</h1>
+    <p class="au-description">
+      Somos una empresa legalmente constituida, especialista en la gerencia y
+      gestión de proyectos, comprometida con la excelencia en cada fase del
+      desarrollo. Contamos con amplia experiencia en consultorías
+      multidisciplinarias de ingeniería, abarcando diversas áreas técnicas para
+      ofrecer soluciones integrales a nuestros clientes.
+    </p>
+    <iframe
+      class="au-video"
+      width="100%"
+      height="100%"
+      src="https://www.youtube.com/embed/zqLEO5tIuYs"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    >
+    </iframe>
+  </div>
+
+  <div class="ms-container">
+    <div class="ms-first-row">
+      <div class="ms-container">
+        <h1 class="ms-title">Nuestra Visión</h1>
+        <p class="ms-description">
+          Ser una empresa líder en la gerencia y gestión de proyectos dentro del
+          sector de la construcción, reconocida por nuestra capacidad de ofrecer
+          soluciones innovadoras y multidisciplinarias que impulsen el
+          crecimiento y la sostenibilidad de la industria. Aspiramos a
+          consolidarnos como una referencia regional, destacándonos por la
+          excelencia en cada proyecto y contribuyendo al desarrollo de
+          infraestructura que mejore la calidad de vida.
+        </p>
+      </div>
+      <img class="ms-img" src="assets/images/ms-img.png" alt="" />
+    </div>
+    <div class="ms-second-row">
+      <img class="ms-img" src="assets/images/ms-img.png" alt="" />
+      <div class="ms-container">
+        <p class="ms-description">
+          Ofrecer servicios de consultoría integral en proyectos de ingeniería y
+          construcción, combinando nuestra experiencia técnica y gestión
+          eficiente para garantizar resultados de alta calidad. Estamos
+          comprometidos con la planificación estratégica y la optimización de
+          recursos, asegurando que cada proyecto cumpla con los más altos
+          estándares de la industria de la construcción, respetando los plazos y
+          los costos acordados, y contribuyendo al progreso y sostenibilidad del
+          sector.
+        </p>
+        <h1 class="ms-title">Nuestra Misión</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="au-value-container">
+    <h1 class="au-value-title">Nuestros valores</h1>
+    <div class="au-card-container">
+      @for (value of valueList; track value.id) {
+      <div class="au-card">
+        @switch (value.id) { @case (1) {<app-respect-icon />} @case (2)
+        {<app-organization-icon />} @case (3) {<app-colaboration-icon />} @case
+        (4) {<app-eficient-icon />} @case (5) {<app-punctuality-icon />} }
+
+        <h2 class="au-card-title">{{ value.title }}</h2>
+        <p class="au-card-description">{{ value.description }}</p>
+      </div>
+
+      }
+    </div>
+  </div>
+</div>
