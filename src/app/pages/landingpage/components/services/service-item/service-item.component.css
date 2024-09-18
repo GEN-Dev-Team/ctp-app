@@ -10,8 +10,20 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    justify-content: center;
+    margin-inline: auto;
     gap: 37px;
     position: relative;
+
+    .service-icon-container {
+      width: 193.05px;
+      height: 193.05px;
+      border-radius: 50%;
+      border: 3px solid var(--orange-1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
     .service-number-container {
       width: 48px;

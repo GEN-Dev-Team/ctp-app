@@ -1,0 +1,121 @@
+.au-container {
+  width: 1440px;
+  margin-inline: auto;
+
+  .au-content {
+    padding: 64px 95px 44px;
+
+    .au-title {
+      text-align: center;
+      font-size: 45px;
+      font-weight: 700;
+    }
+
+    .au-description {
+      text-align: justify;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: -0.38px;
+    }
+
+    .au-video {
+      width: 100%;
+      max-width: 961px;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      display: flex;
+      margin-inline: auto;
+      margin-top: 46px;
+    }
+  }
+
+  .ms-container {
+    display: flex;
+    flex-flow: column nowrap;
+    background: var(--orange-1);
+
+    .ms-first-row {
+      height: 310px;
+      display: flex;
+      flex-flow: row nowrap;
+    }
+
+    .ms-second-row {
+      display: flex;
+      flex-flow: row nowrap;
+      height: 310px;
+    }
+
+    .ms-container {
+      width: 50%;
+      padding: 26px 40px;
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 40px;
+    }
+
+    .ms-title {
+      color: var(--Blanco, #fff);
+      font-size: 45px;
+      font-weight: 700;
+      line-height: 150%;
+      letter-spacing: -0.99px;
+      margin: 0;
+    }
+
+    .ms-description {
+      color: var(--Blanco, #fff);
+      text-align: justify;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: -0.342px;
+    }
+
+    .ms-img {
+      width: 100%;
+      max-width: 720px;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+  }
+
+  .au-value-container {
+    padding: 66px 63px 46px;
+
+    .au-value-title {
+      text-align: center;
+      color: #78787d;
+      font-size: 45px;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 50px;
+    }
+
+    .au-card-container {
+      display: flex;
+      flex-flow: row wrap;
+      gap: 0px 230px;
+      justify-content: center;
+
+      .au-card {
+        max-width: 267px;
+        text-align: center;
+
+        .au-card-title {
+          font-size: 30px;
+          font-weight: 700;
+          margin-block: 9px;
+        }
+
+        .au-card-description {
+          text-wrap: balance;
+          font-size: 24px;
+          font-weight: 400;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

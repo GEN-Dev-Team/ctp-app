@@ -1,12 +1,24 @@
 <div class="project-container">
   <h2 class="project-title">Proyectos</h2>
 
+  <p class="project-text">
+    Concretamos los proyectos más desafiantes e innovadores en la industria de
+    la ingeneniería
+  </p>
+
   <div class="project-carousel-container">
     <div class="project-carousel">
       <div class="carousel-content">
         @for (project of projectList; track project.id) {
         <!-- <img class="project-img" src="{{ project.img_path }}" alt="" /> -->
-        <div class="project-img">{{ project.id }}</div>
+        <div
+          class="project-card"
+          [ngClass]="{ 'second-card': project.id % 2 == 0 }"
+        >
+          <img class="project-img" src="{{ project.img_path }}" alt="" />
+          <div class="project-card-title">{{ project.title }}</div>
+          <div class="project-description">{{ project.description }}</div>
+        </div>
         }
       </div>
     </div>

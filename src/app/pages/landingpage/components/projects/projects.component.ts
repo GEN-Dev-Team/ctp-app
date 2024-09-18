@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { BackIconComponent } from './icons/back-icon/back-icon.component';
 import { NextIconComponent } from './icons/next-icon/next-icon.component';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [BackIconComponent, NextIconComponent],
+  imports: [BackIconComponent, NextIconComponent, NgClass],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css',
 })
@@ -13,33 +14,45 @@ export class ProjectsComponent {
   projectList = [
     {
       id: 1,
-      img_path:
-        'https://cdn.ome.lt/ogJ2twPi5Nnx-agzlJddOC0s3sQ=/1200x630/smart/extras/conteudos/jujutsu_kaVqhL3.jpg',
+      title: 'Torre Kyrios',
+      description:
+        'Lorem Ipsum es simplemente el texto de relleno de las imprentas Lorem Ipsum es simplemente el texto de relleno de las imprentas texto de relleno ',
+      img_path: 'assets/images/project-imgs/KYRIOS F1.webp',
     },
     {
       id: 2,
-      img_path:
-        'https://cdn.ome.lt/ogJ2twPi5Nnx-agzlJddOC0s3sQ=/1200x630/smart/extras/conteudos/jujutsu_kaVqhL3.jpg',
+      title: 'Torre Hugo',
+      description:
+        'Lorem Ipsum es simplemente el texto de relleno de las imprentas Lorem Ipsum es simplemente el texto de relleno de las imprentas texto de relleno ',
+      img_path: 'assets/images/project-imgs/DJI_0011.webp',
     },
     {
       id: 3,
-      img_path:
-        'https://cdn.ome.lt/ogJ2twPi5Nnx-agzlJddOC0s3sQ=/1200x630/smart/extras/conteudos/jujutsu_kaVqhL3.jpg',
+      title: 'Edificio Priscila II',
+      description:
+        'Lorem Ipsum es simplemente el texto de relleno de las imprentas Lorem Ipsum es simplemente el texto de relleno de las imprentas texto de relleno ',
+      img_path: 'assets/images/project-imgs/DJI_0700.webp',
     },
     {
       id: 4,
-      img_path:
-        'https://cdn.ome.lt/ogJ2twPi5Nnx-agzlJddOC0s3sQ=/1200x630/smart/extras/conteudos/jujutsu_kaVqhL3.jpg',
+      title: 'Torre Kyrios',
+      description:
+        'Lorem Ipsum es simplemente el texto de relleno de las imprentas Lorem Ipsum es simplemente el texto de relleno de las imprentas texto de relleno ',
+      img_path: 'assets/images/project-imgs/KYRIOS F1.webp',
     },
     {
       id: 5,
-      img_path:
-        'https://cdn.ome.lt/ogJ2twPi5Nnx-agzlJddOC0s3sQ=/1200x630/smart/extras/conteudos/jujutsu_kaVqhL3.jpg',
+      title: 'Torre Hugo',
+      description:
+        'Lorem Ipsum es simplemente el texto de relleno de las imprentas Lorem Ipsum es simplemente el texto de relleno de las imprentas texto de relleno ',
+      img_path: 'assets/images/project-imgs/DJI_0011.webp',
     },
     {
       id: 6,
-      img_path:
-        'https://cdn.ome.lt/ogJ2twPi5Nnx-agzlJddOC0s3sQ=/1200x630/smart/extras/conteudos/jujutsu_kaVqhL3.jpg',
+      title: 'Edificio Priscila II',
+      description:
+        'Lorem Ipsum es simplemente el texto de relleno de las imprentas Lorem Ipsum es simplemente el texto de relleno de las imprentas texto de relleno ',
+      img_path: 'assets/images/project-imgs/DJI_0700.webp',
     },
   ];
 
@@ -52,7 +65,7 @@ export class ProjectsComponent {
       '.carousel-content'
     ) as HTMLElement;
     const carousel_items = document.querySelectorAll(
-      '.project-img'
+      '.project-card'
     ) as NodeListOf<HTMLElement>;
 
     const itemWidth = carousel_items[0].offsetWidth;
@@ -73,7 +86,7 @@ export class ProjectsComponent {
       '.carousel-content'
     ) as HTMLElement;
     const carousel_items = document.querySelectorAll(
-      '.project-img'
+      '.project-card'
     ) as NodeListOf<HTMLElement>;
 
     const itemWidth = carousel_items[0].offsetWidth;

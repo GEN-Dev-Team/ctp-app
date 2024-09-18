@@ -1,8 +1,8 @@
 .project-container {
-  margin-top: 150px;
+  margin-top: 60px;
 
   .project-title {
-    margin: 0 0 55px 0;
+    margin: 0 0 0 0;
     text-align: center;
     color: var(--Gris, #78787d);
     font-size: 45px;
@@ -12,46 +12,106 @@
     letter-spacing: -0.99px;
   }
 
+  .project-text {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 55px;
+  }
+
   .project-carousel-container {
     display: flex;
     align-items: center;
     position: relative;
+    padding-inline: 38px;
 
     .project-carousel {
       width: 95%;
-      height: 400px;
+      height: 353px;
       margin-inline: auto;
       display: flex;
-      background-color: black;
       align-items: center;
       overflow: hidden;
 
       .carousel-content {
         width: 100%;
+        height: 100%;
         margin-inline: auto;
         display: flex;
         flex-flow: row nowrap;
         gap: 50px;
         transition: transform 0.5s ease-in-out;
 
-        .project-img {
+        .project-card {
           width: 31%;
-          height: 200px;
-          background-color: skyblue;
           flex-shrink: 0;
+          overflow-x: hidden;
+          position: relative;
+          z-index: 0;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: space-between;
+          border-radius: 10px;
+
+          .project-img {
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+          }
+
+          .project-card-title {
+            width: 255px;
+            height: 54px;
+            margin: 0 auto;
+            font-size: 30px;
+            text-align: center;
+
+            border-radius: 0px 0px 10px 10px;
+            color: white;
+            font-weight: 600;
+            background: var(--Principal, #d78129);
+            z-index: 1;
+          }
+
+          .project-description {
+            width: 100%;
+            height: 50%;
+            padding: 24px 16px 35px;
+            background: rgba(0, 0, 0, 0.75);
+            color: white;
+            z-index: 1;
+            opacity: 0;
+          }
+
+          &:hover {
+            .project-description {
+              opacity: 1;
+            }
+          }
+        }
+
+        .second-card {
+          flex-flow: column-reverse nowrap;
+
+          .project-card-title {
+            border-radius: 10px 10px 0px 0px;
+          }
         }
       }
     }
 
     .back-arrow {
       position: absolute;
-      left: 0;
+      left: 2%;
       cursor: pointer;
     }
 
     .next-arrow {
       position: absolute;
-      right: 0;
+      right: 2%;
       cursor: pointer;
     }
   }
