@@ -5,11 +5,6 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'ctp-landingpage',
-    pathMatch: 'full',
-  },
-  {
-    path: 'ctp-landingpage',
     component: LandingpageComponent,
     title: 'CTP Consultores',
   },

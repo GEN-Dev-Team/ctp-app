@@ -66,9 +66,10 @@
             width: 255px;
             height: 54px;
             margin: 0 auto;
-            font-size: 30px;
-            text-align: center;
-
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             border-radius: 0px 0px 10px 10px;
             color: white;
             font-weight: 600;

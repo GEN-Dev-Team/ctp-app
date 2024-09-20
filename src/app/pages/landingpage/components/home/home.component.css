@@ -1,3 +1,10 @@
+.hover-animation {
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
 .home-container {
   height: 789px;
   padding: 95px 64px 70px;
