@@ -23,27 +23,34 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
+      .icon {
+        width: 60%;
+        height: 60%;
+      }
     }
 
     .service-number-container {
       width: 48px;
       height: 48px;
       border-radius: 50%;
-      background: white;
+      background: #fff7ef;
       position: absolute;
       left: -10%;
       display: flex;
       align-items: center;
+      justify-content: center;
 
       .service-number {
         display: flex;
+        align-items: center;
+        justify-content: center;
         width: 43.592px;
         height: 43.592px;
         border-radius: 50%;
         background: var(--orange-1);
         color: white;
         font-size: 28px;
-        justify-content: center;
         font-weight: 600;
       }
     }
@@ -55,5 +62,38 @@
     font-weight: 600;
     font-size: 20px;
     text-align: center;
+  }
+}
+
+@media (width < 768px) {
+  .service-item-container {
+    width: 163px;
+    gap: 1px;
+
+    .service-icon {
+      gap: 37px;
+
+      .service-icon-container {
+        max-width: 90px;
+        max-height: 90px;
+        border: 1px solid var(--orange-1);
+      }
+
+      .service-number-container {
+        width: 26px;
+        height: 26px;
+
+        .service-number {
+          width: 22px;
+          height: 22px;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .service-title {
+      font-weight: 600;
+      font-size: 12px;
+    }
   }
 }

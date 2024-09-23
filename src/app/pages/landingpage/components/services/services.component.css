@@ -15,7 +15,8 @@
   }
 
   .services-subtitle {
-    width: 1155px;
+    width: 100%;
+    max-width: 1155px;
     margin: 20px auto 57px;
     text-align: center;
     font-size: 20px;
@@ -34,6 +35,32 @@
       width: 92.633px;
       height: 3px;
       background: #d78129;
+    }
+  }
+}
+
+@media (width < 768px) {
+  .services-container {
+    height: 458px;
+    padding-top: 47px;
+
+    .services-title {
+      font-size: 16px;
+    }
+
+    .services-subtitle {
+      margin: 4px auto 19px;
+      font-size: 12px;
+      letter-spacing: -0.228px;
+    }
+
+    .service-content {
+      flex-flow: row wrap;
+      row-gap: 18px;
+
+      .service-separator {
+        display: none;
+      }
     }
   }
 }

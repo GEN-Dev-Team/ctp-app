@@ -10,7 +10,6 @@
     <div class="project-carousel">
       <div class="carousel-content">
         @for (project of projectList; track project.id) {
-        <!-- <img class="project-img" src="{{ project.img_path }}" alt="" /> -->
         <div
           class="project-card"
           [ngClass]="{ 'second-card': project.id % 2 == 0 }"

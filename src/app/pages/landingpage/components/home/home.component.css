@@ -28,7 +28,8 @@
   }
 
   .home-text {
-    width: 797px;
+    width: 100%;
+    max-width: 797px;
     color: #fff;
     font-size: 60px;
     font-style: normal;
@@ -39,7 +40,8 @@
   }
 
   .home-button {
-    width: 161px;
+    width: 100%;
+    max-width: 161px;
     height: 56px;
     border-radius: 4px;
     background: var(--orange-1);
@@ -51,7 +53,8 @@
   }
 
   .home-cards-container {
-    width: 1184px;
+    width: 100%;
+    max-width: 1184px;
     height: 146px;
     padding: 13px 117px 14px 92px;
     border-radius: 10px;
@@ -69,6 +72,38 @@
       width: 1px;
       height: 119px;
       background: #b4b4bd;
+    }
+  }
+}
+
+@media (width < 768px) {
+  .home-container {
+    height: 205px;
+    padding: 20px 88px 0 20px;
+
+    .home-text {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 150%;
+      letter-spacing: -0.44px;
+    }
+
+    .home-button {
+      width: 63px;
+      height: 21px;
+      padding: 0 10px;
+      font-size: 8px;
+      font-weight: 400;
+    }
+
+    .home-cards-container {
+      width: 80%;
+      height: 46px;
+      padding: 6px 10px;
+
+      .card-separator {
+        height: 34px;
+      }
     }
   }
 }

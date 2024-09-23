@@ -5,13 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="117"
-      height="100"
-      viewBox="0 0 117 100"
-      fill="none"
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117 100" fill="none">
       <g clip-path="url(#clip0_95_1106)">
         <path
           d="M12.227 62.4705V87.1462L1.25 97.1665V62.4705H12.227Z"
