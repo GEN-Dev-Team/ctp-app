@@ -160,7 +160,7 @@
 }
 
 /* responsive */
-@media (max-width: 768px) {
+@media (min-width:376) and (max-width: 768px) {
   .footer-container {
     flex-direction: column;
     align-items: center;
@@ -177,17 +177,183 @@
   }
 }
 
-@media (max-width: 576px) {
-  .social-icons {
-    gap: 10px;
-  }
+@media (max-width: 375px) {
+/* estilo del footer principal */
+.footer {
+  background-color: #000;
+}
 
-  .footer-section h3 {
-    font-size: 14px;
-  }
+.footer-container {
+  display: flex;
+  gap: 25px;
+  width: 375px;
+  height: 205px;
+  padding-left:20px ;
+  padding-right:20px ;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  margin-inline: auto;
+  background-color: #000;
+  color: #fff;
 
-  .footer-logo p,
-  .footer-section a {
-    font-size: 12px;
-  }
+}
+
+/* seción del logo y derechos de Autor */
+.footer-logo {
+  width: 80px;
+  height: 59.608px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.footer-logo .logo {
+  width: 80px;
+  height: 56.608px
+}
+.footer-logo .derechos{
+  position: relative;
+  width: 260px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  top: 150%;
+
+}
+.footer-logo p {
+  margin: 0;
+  font-size: 8px;
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  position: relative;
+  top: 69%;
+}
+.social-icons svg {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s, fill 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #ff7f00;
+  color: #fff;
+}
+
+/* footer-section  */
+.principal-footer-section {
+  width: 635px;
+  height: 168px;
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  margin-left: 60px;
+}
+.footer-section:nth-child(1) {
+  width: 80px;
+  height: 15px;
+}
+.footer-section:nth-child(2) {
+  width: 100px;
+  height: 15px;
+}
+.footer-section:nth-child(3)
+{
+  position: relative;
+  width: 126px;
+  height: 45px;
+  top: 35%;
+  right: 355px;
+}
+.footer-section h3 {
+  font-size: 12px;
+  margin-bottom: 8px;
+  margin-top: 10px;
+
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 7px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 8px;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: #ff7f00;
+}
+
+/* formulario de ssuscripción */
+
+.subscribe-form {
+  width: 121px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.subscribe-form input {
+  width: 121px;
+  height: 22px;
+  flex-shrink: 0;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.2); /* Fondo gris transparente */
+  color: #FFF;
+  padding: 0 5px; /*para el texto  */
+  border: none;
+}
+
+
+.subscribe-form input::placeholder {
+  display: flex;
+  width: 81px;
+  height: 12px;
+  color: var(--Text-Gray-300, #D9DBE1);
+  /* Body/Regular/Body 3 */
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  position: relative;
+  bottom: 2px;
+}
+
+.subscribe-form input:focus {
+  outline: none;
+  border-bottom: 1px solid #ff7f00;
+}
+.subscribe-form button{
+  position: absolute;
+  top: 50%;
+  right: 2px;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subscribe-form button svg{
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+}
 }
