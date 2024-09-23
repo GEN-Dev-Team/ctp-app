@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { BackIconComponent } from './icons/back-icon/back-icon.component';
 import { NextIconComponent } from './icons/next-icon/next-icon.component';
 import { NgClass } from '@angular/common';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-projects',
@@ -58,6 +59,23 @@ export class ProjectsComponent {
 
   currentIndex = 0;
   gap = 50;
+
+  constructor(private breakpointObserver: BreakpointObserver) {}
+
+  ngOnInit(): void {
+    // Observar el tamaño de la pantalla y ajustar el valor de gap
+    this.breakpointObserver
+      .observe([Breakpoints.Handset])
+      .subscribe((result) => {
+        if (result.matches) {
+          // Si es una pantalla móvil, establece gap en 25
+          this.gap = 25;
+        } else {
+          // Si es desktop, establece gap en 50
+          this.gap = 50;
+        }
+      });
+  }
 
   previousProject() {
     console.log('previous');

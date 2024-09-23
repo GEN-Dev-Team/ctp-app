@@ -16,3 +16,18 @@
     font-weight: 400;
   }
 }
+
+@media (width < 768px) {
+  .card-container {
+    width: 80px;
+
+    span {
+      font-size: 18px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 8px;
+    }
+  }
+}

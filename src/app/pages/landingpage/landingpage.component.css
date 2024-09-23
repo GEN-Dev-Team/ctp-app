@@ -23,3 +23,9 @@
     width: 35px;
   }
 }
+
+@media (width < 768px) {
+  .landingpage-container {
+    width: 100%;
+  }
+}

@@ -6,13 +6,13 @@
 .footer-container {
   display: flex;
   gap: 125px;
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
   height: 328px;
   padding: 64px 165px;
   margin-inline: auto;
   background-color: #000;
   color: #fff;
-
 }
 
 /* seción del logo y derechos de Autor */
@@ -27,9 +27,9 @@
 
 .footer-logo .logo {
   width: 102px;
-  height: 76px
+  height: 76px;
 }
-.footer-logo .derechos{
+.footer-logo .derechos {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -72,8 +72,7 @@
   width: 160px;
   height: 168px;
 }
-.footer-section:nth-child(3)
-{
+.footer-section:nth-child(3) {
   width: 255px;
   height: 92px;
 }
@@ -114,7 +113,6 @@
   gap: 10px;
   margin-top: 10px;
   position: relative;
-
 }
 
 .subscribe-form input {
@@ -123,14 +121,13 @@
   flex-shrink: 0;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.2); /* Fondo gris transparente */
-  color: #FFF;
+  color: #fff;
   padding: 0 15px; /*para el texto  */
   border: none;
 }
 
-
 .subscribe-form input::placeholder {
-  color: var(--Text-Gray-300, #D9DBE1);
+  color: var(--Text-Gray-300, #d9dbe1);
   /* Body/Regular/Body 3 */
   font-size: 14px;
   font-weight: 400;
@@ -141,7 +138,7 @@
   outline: none;
   border-bottom: 1px solid #ff7f00;
 }
-.subscribe-form button{
+.subscribe-form button {
   position: absolute;
   top: 50%;
   right: 15px;
@@ -153,7 +150,7 @@
   align-items: center;
   justify-content: center;
 }
-.subscribe-form button svg{
+.subscribe-form button svg {
   width: 18px;
   height: 18px;
   flex-shrink: 0;

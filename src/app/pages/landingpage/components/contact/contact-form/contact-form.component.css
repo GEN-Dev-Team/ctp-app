@@ -45,3 +45,34 @@
     font-size: 20px;
   }
 }
+
+@media (width < 768px) {
+  .contact-form-container {
+    width: 100%;
+    gap: 5.88px;
+    font-size: 8px;
+
+    .form-control {
+      input,
+      textarea {
+        height: 13px;
+        padding-inline-start: 3px;
+        margin-top: 1px;
+        border-radius: 2px;
+        border: 1px solid var(--orange-1);
+        font-size: 8px;
+      }
+
+      textarea {
+        min-height: 21px;
+      }
+    }
+
+    .form-button {
+      height: 16px;
+      font-size: 10px;
+      letter-spacing: 0.05px;
+      border-radius: 2px;
+    }
+  }
+}
