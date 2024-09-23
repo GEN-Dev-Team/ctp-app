@@ -60,9 +60,12 @@
     <div class="au-card-container">
       @for (value of valueList; track value.id) {
       <div class="au-card">
-        @switch (value.id) { @case (1) {<app-respect-icon />} @case (2)
-        {<app-organization-icon />} @case (3) {<app-colaboration-icon />} @case
-        (4) {<app-eficient-icon />} @case (5) {<app-punctuality-icon />} }
+        <div class="au-card-icon">
+          @switch (value.id) { @case (1) {<app-respect-icon />} @case (2)
+          {<app-organization-icon />} @case (3) {<app-colaboration-icon />}
+          @case (4) {<app-eficient-icon />} @case (5) {<app-punctuality-icon />}
+          }
+        </div>
 
         <h2 class="au-card-title">{{ value.title }}</h2>
         <p class="au-card-description">{{ value.description }}</p>

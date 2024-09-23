@@ -1,5 +1,6 @@
 .au-container {
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
   margin-inline: auto;
 
   .au-content {
@@ -59,7 +60,6 @@
       color: var(--Blanco, #fff);
       font-size: 45px;
       font-weight: 700;
-      line-height: 150%;
       letter-spacing: -0.99px;
       margin: 0;
     }
@@ -103,6 +103,12 @@
         max-width: 267px;
         text-align: center;
 
+        .au-card-icon {
+          width: 96px;
+          height: 93px;
+          margin-inline: auto;
+        }
+
         .au-card-title {
           font-size: 30px;
           font-weight: 700;
@@ -114,6 +120,113 @@
           font-size: 24px;
           font-weight: 400;
           margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (width < 768px) {
+  .au-container {
+    .au-content {
+      padding: 20px 25px 27px;
+
+      .au-title {
+        font-size: 16px;
+        letter-spacing: -0.352px;
+      }
+
+      .au-description {
+        text-align: center;
+        font-size: 12px;
+        letter-spacing: -0.228px;
+      }
+
+      .au-video {
+        margin-top: 34px;
+      }
+    }
+
+    .ms-container {
+      width: 100%;
+      flex-flow: row nowrap;
+
+      .ms-container {
+        width: 100%;
+        height: auto;
+        padding: 10px 15px;
+        flex-flow: row wrap;
+        gap: 0px;
+      }
+
+      .ms-first-row {
+        height: auto;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+      }
+
+      .ms-second-row {
+        height: auto;
+        flex-flow: column nowrap;
+
+        .ms-container {
+          flex-flow: column-reverse nowrap;
+        }
+      }
+
+      .ms-title {
+        font-size: 14px;
+        letter-spacing: -0.308px;
+      }
+
+      .ms-description {
+        margin: 11px 0 0 0;
+        font-size: 8px;
+        letter-spacing: -0.152px;
+      }
+
+      .ms-img {
+        width: 100%;
+        max-width: 720px;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+      }
+    }
+
+    .au-value-container {
+      padding: 20px 18px;
+
+      .au-value-title {
+        font-size: 16px;
+        letter-spacing: -0.352px;
+        margin-bottom: 20px;
+      }
+
+      .au-card-container {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 0px 17px;
+        justify-content: center;
+
+        .au-card {
+          max-width: 100px;
+          text-align: center;
+
+          .au-card-icon {
+            width: 30.992px;
+            height: 30px;
+          }
+
+          .au-card-title {
+            font-size: 14px;
+            margin-block: 5px;
+            letter-spacing: -0.308px;
+          }
+
+          .au-card-description {
+            font-size: 8px;
+            letter-spacing: -0.152px;
+          }
         }
       }
     }
