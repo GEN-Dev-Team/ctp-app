@@ -22,6 +22,10 @@
     width: 102px;
   }
 }
+.menuYlenguaje{
+  display: flex;
+
+}
 
 .nav-menu {
   display: flex;
@@ -168,6 +172,11 @@
     padding-bottom: 13px;
     padding-top: 13px;
     padding-right: 19.7px;
+    padding-bottom: 13.67px;
+  }
+  .menu-toggle svg{
+    width: 15.286px;
+    height: 13.375px;
   }
 
   .nav-menu {
@@ -224,9 +233,15 @@ line-height: 20px; /* 200% */
   /* Ajustar los idiomas */
 .language-switcher {
   display: flex;
-  width: 57px;
+  width: 48px;
   align-items: center;
   gap: 15px;
+  position: relative;
+  margin-right: 25px;
+  left: 70px;
+  bottom: 2px;
+  justify-content: space-between;
+
 }
 
 .lang-link {
@@ -234,10 +249,18 @@ line-height: 20px; /* 200% */
   color: #333;
   font-weight: bold;
   transition: color 0.3s;
+  font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px;
 }
 
 .lang-link.active {
   color: #ff9900; /* Color anaranjado para el idioma activo */
+  font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px;
 }
 
 .lang-link:hover {
