@@ -1,5 +1,9 @@
 {
   "header-container": {
+    "about": "Nosotros",
+    "services": "Servicios",
+    "projects": "Proyectos",
+    "clients": "Clientes",
     "contact": "Contáctanos"
   }
 }

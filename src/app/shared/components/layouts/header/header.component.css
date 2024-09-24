@@ -83,6 +83,7 @@
 
 .lang-link.active {
   color: #ff9900; /* Color anaranjado para el idioma activo */
+  transition: none;
 }
 
 .lang-link:hover {
@@ -224,11 +225,11 @@
   .nav-menu li a{
     margin: 0;
     color: var(--Blanco, #FFF);
-font-family: Ruberoid;
-font-size: 10px;
-font-style: normal;
-font-weight: 500;
-line-height: 20px; /* 200% */
+    font-family: Ruberoid;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 200% */
   }
   /* Ajustar los idiomas */
 .language-switcher {
@@ -245,25 +246,11 @@ line-height: 20px; /* 200% */
 }
 
 .lang-link {
-  text-decoration: none;
-  color: #333;
   font-weight: bold;
-  transition: color 0.3s;
+  cursor: pointer;
   font-size: 12px;
-font-style: normal;
-font-weight: 700;
-line-height: 24px;
-}
-
-.lang-link.active {
-  color: #ff9900; /* Color anaranjado para el idioma activo */
-  font-size: 12px;
-font-style: normal;
-font-weight: 700;
-line-height: 24px;
-}
-
-.lang-link:hover {
-  color: #000000; /* Color de hover para los enlaces de idioma */
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
 }
 }
