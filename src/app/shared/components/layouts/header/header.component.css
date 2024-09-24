@@ -86,10 +86,6 @@
   transition: none;
 }
 
-.lang-link:hover {
-  color: #000000; /* Color de hover para los enlaces de idioma */
-}
-
 .nav-menu li a::after {
   content: "";
   display: block;
