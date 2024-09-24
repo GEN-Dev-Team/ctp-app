@@ -21,12 +21,14 @@
       <a href="#"
          class="lang-link"
          id="spanish-button"
+         [class.active]="currentLanguage === 'ES'"
          (click)="changeLanguage('ES'); $event.preventDefault();">ES
       </a>
 
       <a href="#"
          class="lang-link"
          id="english-button"
+         [class.active]="currentLanguage === 'EN'"
          (click)="changeLanguage('EN'); $event.preventDefault();">EN
       </a>
     </div>
