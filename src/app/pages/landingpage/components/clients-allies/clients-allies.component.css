@@ -164,7 +164,8 @@
               animation: slide 14s linear infinite;
 
               img {
-                width: 74px;
+                width: auto;
+                height: 100%;
               }
             }
           }
