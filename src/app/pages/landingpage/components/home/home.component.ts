@@ -14,20 +14,20 @@ export class HomeComponent {
   homeCardList = [
     {
       id: 1,
-      value: 4,
+      value: 3,
       text: 'Años de experiencia',
     },
 
     {
       id: 2,
-      value: 10,
-      text: 'Servicios',
+      value: 120000,
+      text: 'm2 Gestionados',
     },
 
     {
       id: 3,
       value: 10,
-      text: 'Proyectos',
+      text: 'Proyectos desarrollados',
     },
   ];
 }

@@ -12,7 +12,7 @@ export class HomeCardComponent implements OnInit {
   animatedValue: number = 0;
 
   ngOnInit() {
-    this.animateValue(0, this.card.value, 1000);
+    // this.animateValue(0, this.card.value, 2000);
   }
 
   animateValue(start: number, end: number, duration: number) {

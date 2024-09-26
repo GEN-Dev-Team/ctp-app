@@ -17,14 +17,14 @@
   height: 76px;
   width: 102px;
   flex-shrink: 0;
+
   .logo {
     height: 76px;
     width: 102px;
   }
 }
-.menuYlenguaje{
+.menuYlenguaje {
   display: flex;
-
 }
 
 .nav-menu {
@@ -114,7 +114,7 @@
     top: 100%;
     left: 0;
     right: 0;
-    background-color: #F5F7FA;
+    background-color: #f5f7fa;
     flex-direction: column;
     text-align: center;
     transition: max-height 0.3s ease-in-out;
@@ -169,7 +169,7 @@
     padding-right: 19.7px;
     padding-bottom: 13.67px;
   }
-  .menu-toggle svg{
+  .menu-toggle svg {
     width: 15.286px;
     height: 13.375px;
   }
@@ -180,11 +180,10 @@
     text-align: left;
     top: 40px;
     width: 100%;
-    background-color: #F5F7FA;
+    background-color: #f5f7fa;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
-
   }
 
   .nav-menu.active {
@@ -193,7 +192,7 @@
     width: 160px;
     flex-shrink: 0;
     border-radius: 0px 0px 4px 4px;
-    background: var(--Principal, #D78129);
+    background: var(--Principal, #d78129);
     z-index: 999; /* Asegura que el menú esté por encima de otros elementos */
     display: flex;
     flex-direction: column;
@@ -222,42 +221,39 @@
     gap: 15px;
     align-items: flex-start;
   }
-  .nav-menu li{
+  .nav-menu li {
     margin: 0;
     text-transform: uppercase;
     width: 90px;
     height: 20px;
   }
 
-  .nav-menu li a{
+  .nav-menu li a {
     display: flex;
     margin: 0;
-    color: var(--Blanco, #FFF);
+    color: var(--Blanco, #fff);
     font-size: 10px;
     font-weight: 500;
     line-height: 20px; /* 200% */
     align-items: center;
   }
   /* Ajustar los idiomas */
-.language-switcher {
-  display: flex;
-  width: 48px;
-  align-items: center;
-  gap: 15px;
-  position: relative;
-  margin-right: 25px;
-  left: 70px;
-  bottom: 2px;
-  justify-content: space-between;
+  .language-switcher {
+    display: flex;
+    width: 48px;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    margin-right: 25px;
+    left: 70px;
+    bottom: 2px;
+    justify-content: space-between;
+  }
 
+  .lang-link {
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+  }
 }
-
-.lang-link {
-  cursor: pointer;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 24px;
-}
-}
-
-

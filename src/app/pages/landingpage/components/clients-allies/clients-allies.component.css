@@ -67,7 +67,7 @@
             flex-flow: row nowrap;
             height: 133px;
             gap: 50px;
-            animation: slide 14s linear infinite;
+            animation: slide 30s linear infinite;
 
             img {
               width: 208px;
@@ -75,7 +75,7 @@
           }
 
           .animation-to-right {
-            animation: slide-reverse 14s linear infinite;
+            animation: slide-reverse 30s linear infinite;
           }
         }
       }

@@ -18,7 +18,9 @@
     left: 0;
     z-index: -1;
     background-image: url("/assets/images/bg-img.webp");
-    background-size: cover;
+    background-size: 100% auto;
+    background-position: bottom;
+    overflow: hidden;
 
     .bg-overlay {
       width: 100%;
@@ -27,51 +29,61 @@
     }
   }
 
-  .home-text {
+  .home-content {
     width: 100%;
-    max-width: 797px;
-    color: #fff;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 150%;
-    letter-spacing: -1.32px;
-    text-wrap: balance;
-  }
+    max-width: 1440px;
+    margin-inline: auto;
 
-  .home-button {
-    width: 100%;
-    max-width: 161px;
-    height: 56px;
-    border-radius: 4px;
-    background: var(--orange-1);
-    border: none;
-    color: white;
-    font-size: 18px;
-    font-weight: 400;
-    cursor: pointer;
-  }
+    .home-text {
+      width: 100%;
+      max-width: 797px;
+      color: #fff;
+      font-size: 60px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%;
+      letter-spacing: -1.32px;
+      text-wrap: balance;
+    }
 
-  .home-cards-container {
-    width: 100%;
-    max-width: 1184px;
-    height: 146px;
-    padding: 13px 117px 14px 92px;
-    border-radius: 10px;
-    background: var(--gray-2);
-    box-shadow: 0px 11px 20px 0px rgba(23, 23, 23, 0.21);
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    position: absolute;
-    transform: translateX(-50%);
-    left: 50%;
-    bottom: -10%;
+    .home-button {
+      width: 100%;
+      max-width: 161px;
+      height: 56px;
+      border-radius: 4px;
+      background: var(--orange-1);
+      border: none;
+      color: white;
+      font-size: 18px;
+      font-weight: 400;
+      cursor: pointer;
 
-    .card-separator {
-      width: 1px;
-      height: 119px;
-      background: #b4b4bd;
+      &:hover {
+        background-color: #db934b;
+      }
+    }
+
+    .home-cards-container {
+      width: 100%;
+      max-width: 1184px;
+      height: 146px;
+      padding: 13px 117px 14px 92px;
+      border-radius: 10px;
+      background: var(--gray-2);
+      box-shadow: 0px 11px 20px 0px rgba(23, 23, 23, 0.21);
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      position: absolute;
+      transform: translateX(-50%);
+      left: 50%;
+      bottom: -10%;
+
+      .card-separator {
+        width: 1px;
+        height: 119px;
+        background: #b4b4bd;
+      }
     }
   }
 }

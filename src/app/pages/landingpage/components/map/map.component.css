@@ -55,7 +55,7 @@
       .map-description {
         width: 100%;
         max-width: 605px;
-        height: 261px;
+        height: fit-content;
         padding: 26px 51px 27px 59px;
         border-radius: 21px;
         background: var(--Blanco, #fff);
@@ -72,6 +72,7 @@
           font-weight: 400;
           line-height: 150%; /* 30px */
           letter-spacing: -0.38px;
+          text-wrap: balance;
         }
 
         .map-description-icon {
