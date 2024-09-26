@@ -17,6 +17,7 @@
   height: 76px;
   width: 102px;
   flex-shrink: 0;
+
   .logo {
     height: 76px;
     width: 102px;
@@ -55,7 +56,6 @@
 .nav-menu a:hover {
   color: #000000;
 }
-
 
 /*ES y EN*/
 .language-switcher {
@@ -106,7 +106,6 @@
   cursor: pointer;
 }
 
-
 /* Responsive */
 @media (min-width: 376px) and (max-width: 768px) {
   .nav-menu {
@@ -115,7 +114,7 @@
     top: 100%;
     left: 0;
     right: 0;
-    background-color: #F5F7FA;
+    background-color: #f5f7fa;
     flex-direction: column;
     text-align: center;
     transition: max-height 0.3s ease-in-out;
@@ -176,11 +175,10 @@
     text-align: center;
     top: 40px; /* Debajo del header, que ahora tiene 40px */
     width: 100%; /* Cubrir el ancho completo de la pantalla */
-    background-color: #F5F7FA;
+    background-color: #f5f7fa;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
-
   }
 
   .nav-menu.active {
@@ -189,7 +187,7 @@
     width: 160px;
     flex-shrink: 0;
     border-radius: 0px 0px 4px 4px;
-    background: var(--Principal, #D78129);
+    background: var(--Principal, #d78129);
     z-index: 999; /* Asegura que el menú esté por encima de otros elementos */
     display: flex;
     flex-direction: column;
@@ -208,39 +206,39 @@
     align-items: baseline; /* Alinea los elementos en el centro horizontalmente */
     gap: 5px; /* Ajusta este valor según lo que desees. Reduce o elimina el espacio */
   }
-  .nav-menu li{
+  .nav-menu li {
     margin: 0;
   }
 
-  .nav-menu li a{
+  .nav-menu li a {
     margin: 0;
-    color: var(--Blanco, #FFF);
-font-family: Ruberoid;
-font-size: 10px;
-font-style: normal;
-font-weight: 500;
-line-height: 20px; /* 200% */
+    color: var(--Blanco, #fff);
+    font-family: Ruberoid;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 200% */
   }
   /* Ajustar los idiomas */
-.language-switcher {
-  display: flex;
-  width: 57px;
-  align-items: center;
-  gap: 15px;
-}
+  .language-switcher {
+    display: flex;
+    width: 57px;
+    align-items: center;
+    gap: 15px;
+  }
 
-.lang-link {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  transition: color 0.3s;
-}
+  .lang-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
 
-.lang-link.active {
-  color: #ff9900; /* Color anaranjado para el idioma activo */
-}
+  .lang-link.active {
+    color: #ff9900; /* Color anaranjado para el idioma activo */
+  }
 
-.lang-link:hover {
-  color: #000000; /* Color de hover para los enlaces de idioma */
-}
+  .lang-link:hover {
+    color: #000000; /* Color de hover para los enlaces de idioma */
+  }
 }

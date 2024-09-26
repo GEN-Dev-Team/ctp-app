@@ -17,42 +17,42 @@ export class ProjectsComponent {
       id: 1,
       title: 'Torre Kyrios',
       description:
-        'Lorem Ipsum es simplemente el texto de relleno de las imprentas Lorem Ipsum es simplemente el texto de relleno de las imprentas texto de relleno ',
+        'Edificio Kyrios 25,000 m2 Edificio de Oficinas y Departamentos. 2 torres la 1ra de 37 Pisos + 3 Sótanos la 2da 7 Pisos + 3 Sotanos. Servicios realizados: Planificación colaborativa Implementación Lean Construction Integral, Dirección de Obra -  Terminado La Paz- Bolivia ',
       img_path: 'assets/images/project-imgs/KYRIOS F1.webp',
     },
     {
       id: 2,
       title: 'Torre Hugo',
       description:
-        'Lorem Ipsum es simplemente el texto de relleno de las imprentas Lorem Ipsum es simplemente el texto de relleno de las imprentas texto de relleno ',
+        'Torre Hugo, proyecto inmobiliario de departamentos y locales comerciales. Servicios realizados: Implementación de Lean Construction para optimizar flujos de trabajo y reducción de desperdicios, Planificación Integral Colaborativa y supervisión integral. Estado: Terminado La Paz- Bolivia (2024)',
       img_path: 'assets/images/project-imgs/DJI_0011.webp',
     },
     {
       id: 3,
       title: 'Edificio Priscila II',
       description:
-        'Lorem Ipsum es simplemente el texto de relleno de las imprentas Lorem Ipsum es simplemente el texto de relleno de las imprentas texto de relleno ',
+        'Edificio Priscila II 13,616 m2 Edificio de Oficinas y Departamentos. 15 Pisos + 5 Sótanos  Servicios realizados: Planificación Colaborativa, Implementación Lean Construction Integral, Modelado y Gestión BIM Estado: Terminado La Paz- Bolivia',
       img_path: 'assets/images/project-imgs/DJI_0700.webp',
     },
     {
       id: 4,
       title: 'Torre Kyrios',
       description:
-        'Lorem Ipsum es simplemente el texto de relleno de las imprentas Lorem Ipsum es simplemente el texto de relleno de las imprentas texto de relleno ',
+        'Edificio Kyrios 25,000 m2 Edificio de Oficinas y Departamentos. 2 torres la 1ra de 37 Pisos + 3 Sótanos la 2da 7 Pisos + 3 Sotanos. Servicios realizados: Planificación colaborativa Implementación Lean Construction Integral, Dirección de Obra -  Terminado La Paz- Bolivia ',
       img_path: 'assets/images/project-imgs/KYRIOS F1.webp',
     },
     {
       id: 5,
       title: 'Torre Hugo',
       description:
-        'Lorem Ipsum es simplemente el texto de relleno de las imprentas Lorem Ipsum es simplemente el texto de relleno de las imprentas texto de relleno ',
+        'Torre Hugo, proyecto inmobiliario de departamentos y locales comerciales. Servicios realizados: Implementación de Lean Construction para optimizar flujos de trabajo y reducción de desperdicios, Planificación Integral Colaborativa y supervisión integral. Estado: Terminado La Paz- Bolivia (2024)',
       img_path: 'assets/images/project-imgs/DJI_0011.webp',
     },
     {
       id: 6,
       title: 'Edificio Priscila II',
       description:
-        'Lorem Ipsum es simplemente el texto de relleno de las imprentas Lorem Ipsum es simplemente el texto de relleno de las imprentas texto de relleno ',
+        'Edificio Priscila II 13,616 m2 Edificio de Oficinas y Departamentos. 15 Pisos + 5 Sótanos  Servicios realizados: Planificación Colaborativa, Implementación Lean Construction Integral, Modelado y Gestión BIM Estado: Terminado La Paz- Bolivia',
       img_path: 'assets/images/project-imgs/DJI_0700.webp',
     },
   ];

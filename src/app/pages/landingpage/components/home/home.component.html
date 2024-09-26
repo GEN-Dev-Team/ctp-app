@@ -3,18 +3,20 @@
     <div class="bg-overlay"></div>
   </div>
 
-  <h1 class="home-text">
-    Ofrecemos soluciones para el éxito en cada etapa del proyecto
-  </h1>
+  <div class="home-content">
+    <h1 class="home-text">
+      Ofrecemos soluciones para el éxito en cada etapa del proyecto
+    </h1>
 
-  <button class="home-button hover-animation" routerLink="/about-us">
-    Conócenos
-  </button>
+    <button class="home-button hover-animation" routerLink="/about-us">
+      Conócenos
+    </button>
 
-  <div class="home-cards-container">
-    @for (card of homeCardList; track card.id) {
-    <app-home-card [card]="card" />
-    <div class="card-separator" [hidden]="card.id == 3"></div>
-    }
+    <div class="home-cards-container">
+      @for (card of homeCardList; track card.id) {
+      <app-home-card [card]="card" />
+      <div class="card-separator" [hidden]="card.id == 3"></div>
+      }
+    </div>
   </div>
 </div>

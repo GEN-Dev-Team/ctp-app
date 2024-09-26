@@ -5,16 +5,20 @@
     <div class="map-details">
       <div class="map-first-col">
         <div class="map-description">
-          <h2 class="map-title">LA PAZ - BOLIVIA</h2>
+          <h2 class="map-title">
+            @if (!isPoint1Selected) {SANTA CRUZ - BOLIVIA} @else {LA PAZ -
+            BOLIVIA}
+          </h2>
           <p class="map-text">
-            @if (isPoint1Selected) { Punto 1 seleccionado Lorem Ipsum es
-            simplemente el texto de relleno de las imprentas y archivos de
-            texto. Lorem Ipsum ha sido el texto de relleno estándar de las
-            industrias desde el año texto de relleno estándar de las . } @else {
-            Punto 2 seleccionado Lorem Ipsum es simplemente el texto de relleno
-            de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto
-            de relleno estándar de las industrias desde el año texto de relleno
-            estándar de las . }
+            @if (!isPoint1Selected) { Con presencia en Santa Cruz, el principal
+            motor económico de Bolivia, gestionamos proyectos de gran impacto y
+            apoyamos el desarrollo de nuestros clientes, aprovechando las
+            oportunidades de este dinámico centro de crecimiento industrial y
+            comercial} @else { Estamos presentes en La Paz, el centro político y
+            administrativo de Bolivia, brindando soluciones estratégicas y
+            servicios especializados que se ajustan a las necesidades y retos
+            del mercado local, fortaleciendo nuestra cercanía y compromiso con
+            los proyectos en la región. }
           </p>
 
           <app-caret-right-icon class="map-description-icon" />

@@ -27,6 +27,12 @@
       .icon {
         width: 60%;
         height: 60%;
+        fill: none;
+        stroke: #78787d;
+      }
+
+      &:hover .icon {
+        stroke: var(--orange-1);
       }
     }
 
