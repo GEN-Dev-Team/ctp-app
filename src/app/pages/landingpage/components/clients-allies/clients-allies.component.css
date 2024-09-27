@@ -65,12 +65,13 @@
           .allies {
             display: flex;
             flex-flow: row nowrap;
+            align-items: center;
             height: 133px;
             gap: 50px;
             animation: slide 30s linear infinite;
 
             img {
-              width: 208px;
+              height: 62px;
             }
           }
 
