@@ -33,24 +33,16 @@
       <div class="map-media">
         <img class="map-img" src="assets/images/map-img.svg" alt="" />
 
-        <div class="selection-point point-1">
-          <div
-            (click)="selectPoint1()"
-            class="point"
-            [hidden]="isPoint1Selected"
-          ></div>
+        <div (click)="selectPoint1()" class="selection-point point-1">
+          <div class="point" [hidden]="isPoint1Selected"></div>
           <app-location-icon
             class="map-location-icon"
             [hidden]="!isPoint1Selected"
           />
         </div>
 
-        <div class="selection-point point-2">
-          <div
-            (click)="selectPoint2()"
-            class="point"
-            [hidden]="isPoint2Selected"
-          ></div>
+        <div (click)="selectPoint2()" class="selection-point point-2">
+          <div class="point" [hidden]="isPoint2Selected"></div>
           <app-location-icon
             class="map-location-icon"
             [hidden]="!isPoint2Selected"

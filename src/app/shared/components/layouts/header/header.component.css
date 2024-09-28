@@ -3,7 +3,8 @@
 }
 .header {
   display: flex;
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
   height: 84px;
   padding: 4px 112px;
   align-items: center;

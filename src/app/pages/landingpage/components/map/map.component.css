@@ -108,8 +108,11 @@
 
       .selection-point {
         position: absolute;
-        width: 20px;
-        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 50%;
 
         .point {
           cursor: pointer;
@@ -125,7 +128,7 @@
           width: 46px;
           height: 68px;
           position: absolute;
-          top: -55px;
+          top: 15%;
           left: 50%;
           transform: translateX(-50%) translateY(-50%);
           animation: dropAnimation 1s ease forwards;
@@ -133,13 +136,17 @@
       }
 
       .point-1 {
-        top: 40%;
-        left: 12%;
+        top: 24%;
+        left: 3%;
+        width: 20%;
+        height: 35%;
       }
 
       .point-2 {
-        top: 55%;
-        right: 30%;
+        top: 38%;
+        right: 12%;
+        width: 200px;
+        height: 200px;
       }
     }
 

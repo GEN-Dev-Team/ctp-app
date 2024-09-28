@@ -27,11 +27,15 @@
       .icon {
         width: 60%;
         height: 60%;
-        fill: none;
+        fill: #78787d;
         stroke: #78787d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       &:hover .icon {
+        fill: var(--orange-1);
         stroke: var(--orange-1);
       }
     }
