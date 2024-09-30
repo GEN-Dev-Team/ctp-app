@@ -149,7 +149,7 @@
   }
 }
 @media (max-width: 375px) {
-  .container{
+  .container {
     position: relative;
     height: 40px;
   }

@@ -173,6 +173,10 @@
   }
 }
 
+.desktop-element {
+  display: block;
+}
+
 @media (width < 768px) {
   .map-container {
     .map-content {
@@ -186,56 +190,56 @@
     }
 
     .map-details {
-      padding: 20px;
-      height: 201px;
+      padding: 11px 30px 21px;
+      height: 433px;
+      flex-flow: column-reverse wrap;
+      justify-content: inherit;
+      gap: 24px;
 
       .map-first-col {
-        width: 60%;
+        width: 100%;
         position: relative;
         padding-top: 0px;
 
         .map-description {
-          height: 135px;
+          height: 148px;
           padding: 20px 26px;
+          border-radius: 8px;
+          padding: 11px 13px 9px;
 
           .map-title {
             margin: 0;
+            margin-inline-start: 12px;
             font-size: 12px;
             font-weight: 700;
           }
 
           .map-text {
-            height: 72px;
+            height: 108px;
             margin-block: 5px 0;
-            font-size: 8px;
-            letter-spacing: -0.152px;
+            font-size: 12px;
+            letter-spacing: -0.228px;
             overflow-y: scroll;
           }
 
           .map-description-icon {
-            width: 15px;
-            height: 15px;
-            top: 14%;
+            width: 12px;
+            top: 9%;
           }
         }
 
         .map-nosotros {
-          gap: 15px;
-          font-size: 10px;
-
-          div {
-            width: 15px;
-            height: 15px;
-          }
+          display: none;
         }
       }
 
       .map-media {
         display: flex;
+        height: 40%;
+        flex-flow: column-reverse wrap;
 
         .map-img {
-          align-self: flex-end;
-          height: 73%;
+          width: 208px;
         }
 
         .selection-point {
@@ -248,36 +252,59 @@
           }
 
           .map-location-icon {
-            top: -12px;
             width: 9.544px;
             height: 14.108px;
           }
         }
 
         .point-1 {
-          top: 55%;
-          left: 10%;
+          top: 10%;
+          left: 6%;
+          width: 20px;
+          height: 30px;
         }
 
         .point-2 {
-          top: 65%;
+          top: 25%;
+          right: 48%;
+          width: 50px;
+          height: 50px;
+        }
+      }
+
+      .map-nosotros {
+        position: absolute;
+        display: flex;
+        flex-flow: row wrap;
+        right: 0%;
+        bottom: 20%;
+        gap: 15px;
+        font-size: 10px;
+
+        div {
+          width: 15px;
+          height: 15px;
+          background: var(--orange-1);
         }
       }
 
       .map-guide {
-        top: 11%;
+        flex-flow: column nowrap;
+        top: 8%;
         right: 5%;
         gap: 8px;
 
         p {
-          width: 90px;
-          font-size: 8px;
+          width: 139px;
+          font-size: 12px;
           letter-spacing: -0.16px;
+          text-align: center;
         }
 
         .icon {
           width: 15px;
           height: 20.625px;
+          align-self: center;
         }
       }
     }
